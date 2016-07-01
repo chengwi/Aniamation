@@ -6,7 +6,6 @@
 //  Copyright © 2016年 jingyu. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 typedef NS_ENUM(NSUInteger, PageTransitionType) {
     PageTransitionTypePush = 0,

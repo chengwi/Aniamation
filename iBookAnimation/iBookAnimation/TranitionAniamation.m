@@ -13,7 +13,6 @@
 
 @interface TranitionAniamation ()
 @property (assign, nonatomic) CGRect originRect;
-@property(assign,nonatomic) CGRect currentRect;
 @property(strong,nonatomic) id<UIViewControllerContextTransitioning> transitionContext;
 @end
 
@@ -95,13 +94,23 @@
 
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
   //动画结束的回调
+    [_transitionContext completeTransition:![_transitionContext transitionWasCancelled]];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.9 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [_transitionContext completeTransition:YES];
         UIView *tempView = [[_transitionContext containerView] viewWithTag:1001];
         tempView .hidden = YES;
     });
     
-    
+    /**
+     *  
+     id<UIViewControllerContextTransitioning> transitionContext = [anim valueForKey:@"transitionContext"];
+     [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+     if ([transitionContext transitionWasCancelled]) {
+     [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey].view.layer.mask = nil;
+     }
+     *
+     *  @return <#return value description#>
+     */
 }
 
 //pop
