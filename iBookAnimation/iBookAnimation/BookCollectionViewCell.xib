@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BookCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="98" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="98" height="99"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="001.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="OeL-2w-9bQ">
+                        <rect key="frame" x="0.0" y="0.0" width="98" height="99"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="OeL-2w-9bQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9gJ-PA-Ksd"/>
+                <constraint firstAttribute="trailing" secondItem="OeL-2w-9bQ" secondAttribute="trailing" id="Kb9-N7-jeG"/>
+                <constraint firstAttribute="bottom" secondItem="OeL-2w-9bQ" secondAttribute="bottom" id="Ng0-hq-SCn"/>
+                <constraint firstItem="OeL-2w-9bQ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="W0m-gR-tmD"/>
+                <constraint firstItem="OeL-2w-9bQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hpX-wd-1Ta"/>
+                <constraint firstItem="OeL-2w-9bQ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="tYd-ib-9oy"/>
+            </constraints>
+            <size key="customSize" width="98" height="99"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="W0m-gR-tmD"/>
+                    <exclude reference="tYd-ib-9oy"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageView" destination="OeL-2w-9bQ" id="nYH-p9-e5B"/>
+            </connections>
+            <point key="canvasLocation" x="-7" y="294.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="001.JPG" width="640" height="640"/>
+    </resources>
+</document>
