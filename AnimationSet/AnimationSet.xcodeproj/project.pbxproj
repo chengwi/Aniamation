@@ -17,6 +17,7 @@
 		AA25FF831D3F61E600FDE3F4 /* DialAnimateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA25FF821D3F61E600FDE3F4 /* DialAnimateViewController.m */; };
 		AA25FF861D3F677E00FDE3F4 /* XZHWaterWave.m in Sources */ = {isa = PBXBuildFile; fileRef = AA25FF851D3F677E00FDE3F4 /* XZHWaterWave.m */; };
 		AA25FF891D3F6E6D00FDE3F4 /* UIView+WaterWave.m in Sources */ = {isa = PBXBuildFile; fileRef = AA25FF881D3F6E6D00FDE3F4 /* UIView+WaterWave.m */; };
+		AAF621251D40C3BA009881F3 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF621241D40C3BA009881F3 /* TestView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		AA25FF851D3F677E00FDE3F4 /* XZHWaterWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZHWaterWave.m; sourceTree = "<group>"; };
 		AA25FF871D3F6E6D00FDE3F4 /* UIView+WaterWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WaterWave.h"; sourceTree = "<group>"; };
 		AA25FF881D3F6E6D00FDE3F4 /* UIView+WaterWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WaterWave.m"; sourceTree = "<group>"; };
+		AAF621231D40C3BA009881F3 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		AAF621241D40C3BA009881F3 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				AAF621221D407618009881F3 /* WaterWaveAnimation */,
 				AA25FF811D3F61E600FDE3F4 /* DialAnimateViewController.h */,
 				AA25FF821D3F61E600FDE3F4 /* DialAnimateViewController.m */,
+				AAF621231D40C3BA009881F3 /* TestView.h */,
+				AAF621241D40C3BA009881F3 /* TestView.m */,
 				AA25FF6D1D3F5BA100FDE3F4 /* Main.storyboard */,
 				AA25FF701D3F5BA100FDE3F4 /* Assets.xcassets */,
 				AA25FF721D3F5BA100FDE3F4 /* LaunchScreen.storyboard */,
@@ -177,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF621251D40C3BA009881F3 /* TestView.m in Sources */,
 				AA25FF691D3F5BA100FDE3F4 /* AppDelegate.m in Sources */,
 				AA25FF831D3F61E600FDE3F4 /* DialAnimateViewController.m in Sources */,
 				AA25FF891D3F6E6D00FDE3F4 /* UIView+WaterWave.m in Sources */,

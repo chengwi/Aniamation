@@ -8,7 +8,7 @@
 
 #import "WaterWaveViewController.h"
 #import "XZHWaterWave.h"
-
+#import "UIView+WaterWave.h"
 #define kSCREEN_HEIGHT [[UIScreen mainScreen]bounds].size.height
 #define kSCREEN_WIDTH [[UIScreen mainScreen]bounds].size.width
 
@@ -21,6 +21,9 @@
 @property (nonatomic, weak  ) UIImageView *pic_red;
 /** 水波工具 */
 @property (nonatomic, strong) XZHWaterWave *waterWave;
+
+@property (nonatomic, weak) NSTimer *timer;
+
 @end
 
 @implementation WaterWaveViewController
@@ -29,11 +32,13 @@
     [super viewDidLoad];
     self.title = @"水波荡漾";
     self.view.backgroundColor = [UIColor whiteColor];
-    
+    // 每次0.05秒执行一次动画
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:.05 target:self selector:@selector(waving) userInfo:nil repeats:YES];
     [self pic_white];
     [self pic_red];
-    [self waterWave];
-    self.waterWave.waterDepth = 0.5;
+    [self.pic_red waterWaveAnimateWithDepth:0.5];
+//    [self waterWave];
+//    self.waterWave.waterDepth = 0.5;
     
     // Do any additional setup after loading the view.
 }
@@ -79,7 +84,18 @@
     return _pic_red;
 }
 
+- (void)waving {
 
+}
+- (void)dealloc {
+
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.timer invalidate];
+    [self.pic_red stopWave];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

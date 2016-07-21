@@ -15,4 +15,6 @@
  *  @param depth 水波深度
  */
 - (void)waterWaveAnimateWithDepth:(CGFloat)depth;
+//必须要调用此方法，内部使用了定时器，导致内存无法释放
+- (void)stopWave;
 @end

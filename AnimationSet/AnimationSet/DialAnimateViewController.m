@@ -7,15 +7,25 @@
 //
 
 #import "DialAnimateViewController.h"
-
+#import "XZHWaterWave.h"
+#import "TestView.h"
 @interface DialAnimateViewController ()
-
+@property (nonatomic, strong) XZHWaterWave *water;
 @end
 
 @implementation DialAnimateViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    TestView *view = [[TestView alloc] initWithFrame:CGRectMake(50, 100, 100, 100)];
+    view.backgroundColor = [UIColor redColor];
+    [self.view addSubview:view];
+    __weak DialAnimateViewController *myself = self;
+    view.agreeBlock = ^(){
+        myself.water = [[XZHWaterWave alloc] init];
+        NSLog(@"点击率");
+    };
     // Do any additional setup after loading the view.
 }
 
@@ -23,7 +33,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void)dealloc {
 
+
+}
 /*
 #pragma mark - Navigation
 
