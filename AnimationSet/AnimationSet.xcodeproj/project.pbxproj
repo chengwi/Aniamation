@@ -74,12 +74,7 @@
 				AA25FF681D3F5BA100FDE3F4 /* AppDelegate.m */,
 				AA25FF7B1D3F60BF00FDE3F4 /* RootViewController.h */,
 				AA25FF7C1D3F60BF00FDE3F4 /* RootViewController.m */,
-				AA25FF7E1D3F611000FDE3F4 /* WaterWaveViewController.h */,
-				AA25FF7F1D3F611000FDE3F4 /* WaterWaveViewController.m */,
-				AA25FF871D3F6E6D00FDE3F4 /* UIView+WaterWave.h */,
-				AA25FF881D3F6E6D00FDE3F4 /* UIView+WaterWave.m */,
-				AA25FF841D3F677E00FDE3F4 /* XZHWaterWave.h */,
-				AA25FF851D3F677E00FDE3F4 /* XZHWaterWave.m */,
+				AAF621221D407618009881F3 /* WaterWaveAnimation */,
 				AA25FF811D3F61E600FDE3F4 /* DialAnimateViewController.h */,
 				AA25FF821D3F61E600FDE3F4 /* DialAnimateViewController.m */,
 				AA25FF6D1D3F5BA100FDE3F4 /* Main.storyboard */,
@@ -97,6 +92,19 @@
 				AA25FF651D3F5BA100FDE3F4 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAF621221D407618009881F3 /* WaterWaveAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				AA25FF7E1D3F611000FDE3F4 /* WaterWaveViewController.h */,
+				AA25FF7F1D3F611000FDE3F4 /* WaterWaveViewController.m */,
+				AA25FF871D3F6E6D00FDE3F4 /* UIView+WaterWave.h */,
+				AA25FF881D3F6E6D00FDE3F4 /* UIView+WaterWave.m */,
+				AA25FF841D3F677E00FDE3F4 /* XZHWaterWave.h */,
+				AA25FF851D3F677E00FDE3F4 /* XZHWaterWave.m */,
+			);
+			name = WaterWaveAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +332,7 @@
 				AA25FF7A1D3F5BA100FDE3F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
