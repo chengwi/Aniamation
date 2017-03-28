@@ -13,7 +13,6 @@ static NSString *const bookIdetifier = @"cell";
 #define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UINavigationControllerDelegate>
-//@property (strong, nonatomic) UICollectionView *collectionView;
 @property (strong, nonatomic) UICollectionViewFlowLayout *flowLayout;
 
 @end
@@ -66,7 +65,6 @@ static NSString *const bookIdetifier = @"cell";
     ReadViewController *read = [ReadViewController new];
     self.navigationController.delegate = read;
     self.bookCell = (BookCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-//    self.selectIndexPath = indexPath;
     [self.navigationController pushViewController:read animated:YES];
 }
 
