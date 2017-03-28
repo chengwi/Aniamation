@@ -117,7 +117,7 @@
 - (void)doPopAnimation:(id<UIViewControllerContextTransitioning>)transitionContext{
     ViewController* toViewController = (ViewController* )[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     ReadViewController* fromViewController = (ReadViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-//    BookCollectionViewCell *currentCell = (BookCollectionViewCell *)[toViewController.collectionView cellForItemAtIndexPath:toViewController.selectIndexPath];
+    
     UIView *containerView = [transitionContext containerView];
     
     [containerView addSubview:fromViewController.view];
