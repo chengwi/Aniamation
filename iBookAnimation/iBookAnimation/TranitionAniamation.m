@@ -58,6 +58,7 @@
     BookCollectionViewCell *currentCell =  fromViewController.bookCell;
     
     UIView *containerView = [transitionContext containerView];
+#warning 7,7P snapshotViewAfterScreenUpdates 截图方法失效，可用imageView代替。
     //创建临时视图以过渡
     UIView *tempView = [currentCell.imageView snapshotViewAfterScreenUpdates:NO];
     tempView.tag = 1001;
@@ -101,16 +102,7 @@
         tempView .hidden = YES;
     });
     
-    /**
-     *  
-     id<UIViewControllerContextTransitioning> transitionContext = [anim valueForKey:@"transitionContext"];
-     [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
-     if ([transitionContext transitionWasCancelled]) {
-     [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey].view.layer.mask = nil;
-     }
-     *
-     *  @return <#return value description#>
-     */
+    
 }
 
 //pop

@@ -13,6 +13,7 @@ static NSString *const bookIdetifier = @"cell";
 #define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UINavigationControllerDelegate>
+
 @property (strong, nonatomic) UICollectionViewFlowLayout *flowLayout;
 
 @end
@@ -48,6 +49,7 @@ static NSString *const bookIdetifier = @"cell";
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+#warning 7,7P snapshotViewAfterScreenUpdates 截图方法失效，可用imageView代替。
     [self.view addSubview:self.collectionView];
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -65,6 +67,7 @@ static NSString *const bookIdetifier = @"cell";
     ReadViewController *read = [ReadViewController new];
     self.navigationController.delegate = read;
     self.bookCell = (BookCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    self.selectIndexPath = indexPath;
     [self.navigationController pushViewController:read animated:YES];
 }
 

@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
+    self.title = @"冰与火之歌";
     
     self.imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
     self.imageView.image = [UIImage imageNamed:@"002.jpg"];

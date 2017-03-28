@@ -31,13 +31,13 @@
 }
 - (NSArray *)dataSource {
     if (!_dataSource) {
-        self.dataSource = @[@"水波荡漾", @"表盘动画"];
+        self.dataSource = @[@"水波荡漾"];
     }
     return _dataSource;
 }
 - (NSArray *)viewControllers {
     if (!_viewControllers) {
-        self.viewControllers = @[@"WaterWaveViewController", @"DialAnimateViewController"];
+        self.viewControllers = @[@"WaterWaveViewController"];
     }
     return _viewControllers;
 }
